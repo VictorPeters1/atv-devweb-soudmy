@@ -202,8 +202,13 @@ footer .social a {
         justify-content: space-between;
     }
   
-    .product-list {
-      grid-template-columns: 1fr;
+    section.products ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section.products ul li {
+        width: 30%;
     }
   
     section.menu, section.Products, section.Websites {
