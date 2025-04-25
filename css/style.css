@@ -1,0 +1,213 @@
+/* ===============================================================
+                            GERAL   
+=============================================================== */
+
+html {
+    font-size: calc(15px + 0.390625vw);
+  }
+  
+  body {
+    color: #21243d;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #21243d;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    line-height: 130%;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* ===============================================================
+                              HEADER   
+  =============================================================== */
+  
+  header {
+    background-color: #edf7fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  header nav ul li {
+    padding: 10px;
+  }
+  
+  header .signup {
+    background: #0E8388;
+    color: white;   
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  
+  /* ===============================================================
+                              BANNER   
+  =============================================================== */
+  
+  section.menu {
+    text-align: center;
+    padding: 40px 10%;
+  }
+  
+  section.menu h2 {
+    font-size: 2rem;
+    margin: 20px 0 10px;
+  }
+  
+  section.menu p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+  
+  section.menu .btn {
+    background: #0E8388;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  /* ===============================================================
+                              PRODUCTS   
+  =============================================================== */
+  
+  section.Products {
+    background: #CBE4DE;
+    padding: 40px 10%;
+    text-align: center;
+  }
+  
+  section.Products h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  section.Products p {
+    margin-bottom: 30px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .product-list li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .product-list h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* ===============================================================
+                              WEBSITES   
+  =============================================================== */
+  
+  section.Websites {
+    padding: 40px 10%;
+    text-align: center;
+  }
+  
+  section.Websites h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  section.Websites p {
+    margin-bottom: 20px;
+  }
+  
+  section.Websites h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+  
+/* ===============================================================
+                            FOOTER   
+=============================================================== */
+
+footer {
+    background: #CBE4DE; 
+    text-align: center;
+    padding: 30px 10%;
+  }
+  
+  footer a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #888888; 
+  }
+  
+  footer .social a {
+    margin: 0 10px;
+    color: #888888; 
+    font-weight: bold;
+  }
+  
+  footer .social a:hover {
+    color: #21243d; 
+  }
+  
+  footer a:first-of-type {
+    color: #000000; 
+  }
+  
+  footer p {
+    color: #888888; 
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  
+    section.menu, section.Products, section.Websites {
+      padding: 20px 5%;
+    }
+  
+    section.menu h2, section.Products h2, section.Websites h2 {
+      font-size: 1.5rem;
+    }
+  }
