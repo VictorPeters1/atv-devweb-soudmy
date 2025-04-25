@@ -195,9 +195,10 @@ footer .social a {
   margin: 0;
 }
   
-  @media (max-width: 600px) {
-    header nav ul {
-      flex-direction: column;
+  @media (min-width: 900px) {
+       header nav {
+        display: flex;
+        justify-content: space-between;
     }
   
     .product-list {
